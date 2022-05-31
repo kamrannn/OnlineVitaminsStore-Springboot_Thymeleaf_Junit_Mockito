@@ -25,7 +25,6 @@
     <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/product/new}">Add New Product</a>
     <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/allOrders}">Customer Orders</a>
     <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/user/orders}" style="float: left">My Orders</a>
-    <a th:href="@{#}" style="float: right">Hi, <span sec:authentication="name"></span></a>
     <a th:href="@{/logout}" style="float: right">Logout</a>
 </div>
 <div class="jumbotron jumbotron-fluid" style="background-color: ghostwhite">

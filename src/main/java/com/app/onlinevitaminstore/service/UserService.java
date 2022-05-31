@@ -30,6 +30,10 @@ public class UserService implements UserDetailsService {
         return userRepository.findUserByUsername(username);
     }
 
+    public Optional<User> getUserByEmail(String username) {
+        return userRepository.findUserByEmail(username);
+    }
+
     public User save(User user) {
         Role role = new Role();
         role.setId(1L);
@@ -40,14 +44,6 @@ public class UserService implements UserDetailsService {
         return userRepository.save(user);
     }
 
-    /**
-     * This function is the key function of spring security.
-     * Spring security uses this function to find the user from the database and authenticate it.
-     *
-     * @param username
-     * @return
-     * @throws UsernameNotFoundException
-     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<User> user = userRepository.findUserByUsername(username);
@@ -62,12 +58,6 @@ public class UserService implements UserDetailsService {
         }
     }
 
-    /**
-     * This function is providing the role of the user that we have in the datatabase.
-     *
-     * @param user
-     * @return
-     */
     private Set<SimpleGrantedAuthority> getAuthority(User user) {
         Set<SimpleGrantedAuthority> authorities = new HashSet<>();
         authorities.add(new SimpleGrantedAuthority(user.getRole().getName()));

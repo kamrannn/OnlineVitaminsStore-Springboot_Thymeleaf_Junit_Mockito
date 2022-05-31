@@ -1,4 +1,4 @@
-package com.app.onlinevitaminstore.util;
+package com.app.onlinevitaminstore.utility;
 
 import org.springframework.web.multipart.MultipartFile;
 

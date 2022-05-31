@@ -2,7 +2,7 @@ package com.app.onlinevitaminstore.service;
 
 import com.app.onlinevitaminstore.model.Product;
 import com.app.onlinevitaminstore.repository.ProductRepository;
-import com.app.onlinevitaminstore.util.FileUploadUtil;
+import com.app.onlinevitaminstore.utility.FileUploadUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Slf4j

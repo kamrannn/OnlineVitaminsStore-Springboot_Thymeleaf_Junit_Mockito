@@ -23,7 +23,6 @@
 <div class="topnav">
     <a class="active" th:href="@{/}">Home</a>
     <a th:href="@{/user/orders}" style="float: left">My Orders</a>
-    <a th:href="@{#}" style="float: right">Hi, <span sec:authentication="name"></span></a>
     <a th:href="@{/logout}" style="float: right">Logout</a>
 </div>
 <div th:if="${cartItems!= null}" style="float: right;margin-top: 10px;">
@@ -33,11 +32,7 @@
     </a>
 </div>
 <div class="jumbotron jumbotron-fluid" style="background-color: ghostwhite">
-
     <div class="container">
-        <!--        <h1 style="text-align: center; font-family: fantasy; font-size: 40px !important;margin-top: -20px;">All the
-                    available Vitamins that we have !</h1>
-                <hr>-->
         <table class="table table-bordered table-responsive-md" id="table_id">
             <thead>
             <tr>

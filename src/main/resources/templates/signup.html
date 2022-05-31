@@ -20,11 +20,17 @@
     <div class="container">
         <h1 style="text-align: center; font-family: fantasy;" class="login">Registration</h1>
         <hr>
-        <h2 style="text-align: center; color: red" th:if="${userAlreadyExists}">User already exists against this
+        <h2 style="text-align: center; color: red" th:if="${alreadyUsernameExists}">There is already a customer against
+            this
             username</h2>
-        <hr th:if="${userAlreadyExists}">
+        <hr th:if="${alreadyUsernameExists}">
 
-        <h2 style="text-align: center; color: darkgreen" th:if="${successfully}">User is successfully registered !!</h2>
+        <h2 style="text-align: center; color: red" th:if="${alreadyEmailExists}">There is already a customer against
+            this email</h2>
+        <hr th:if="${alreadyEmailExists}">
+
+        <h2 style="text-align: center;font-family: fantasy; color: darkgreen" th:if="${successfully}">You're
+            successfully registered !!</h2>
         <hr th:if="${successfully}">
         <form th:action="@{/register}" th:object="${user}" method="post"
               class="form">

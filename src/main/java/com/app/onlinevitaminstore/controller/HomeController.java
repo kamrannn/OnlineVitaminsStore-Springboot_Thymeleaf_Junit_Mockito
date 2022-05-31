@@ -54,9 +54,13 @@ public class HomeController {
     @PostMapping("/register")
     public String registerForSubmission(@Valid User user, BindingResult result, Model model) {
         if (!result.hasErrors()) {
-            Optional<User> existingUser = userService.getUserByUsername(user.getUsername());
-            if (existingUser.isPresent()) {
-                model.addAttribute("userAlreadyExists", true);
+            Optional<User> userWithSameUsername = userService.getUserByUsername(user.getUsername());
+            Optional<User> userWithSameEmail = userService.getUserByEmail(user.getEmail());
+
+            if (userWithSameUsername.isPresent()) {
+                model.addAttribute("alreadyUsernameExists", true);
+            } else if (userWithSameEmail.isPresent()) {
+                model.addAttribute("alreadyEmailExists", true);
             } else {
                 userService.save(user);
                 model.addAttribute("successfully", true);

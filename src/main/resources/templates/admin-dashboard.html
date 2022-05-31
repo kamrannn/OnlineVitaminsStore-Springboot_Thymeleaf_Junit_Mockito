@@ -24,15 +24,11 @@
     <a class="active" th:href="@{/}">Home</a>
     <a th:href="@{/product/new}">Add New Product</a>
     <a th:href="@{/admin/allOrders}">All Orders</a>
-    <a th:href="@{#}" style="float: right">Hi, <span sec:authentication="name">Admin</span></a>
     <a th:href="@{/logout}" style="float: right">Logout</a>
 </div>
 <div class="bg" th:style="'background: url(/images/bg2.jpg);background-position: top;'">
     <div class="jumbotron jumbotron-fluid" style="background-color: ghostwhite">
         <div class="container">
-<!--            <h1 style="text-align: center; font-family: fantasy; font-size: 40px !important;margin-top: -20px;">All the
-                available Vitamins that we have !</h1>
-            <hr>-->
             <table class="table table-bordered table-responsive-md" id="table_id">
                 <thead>
                 <tr>

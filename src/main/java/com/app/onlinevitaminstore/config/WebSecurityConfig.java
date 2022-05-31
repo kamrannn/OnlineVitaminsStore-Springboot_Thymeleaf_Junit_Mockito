@@ -45,10 +45,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutSuccessUrl("/");
 
         http.csrf().disable();
-
-        http.sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
-                .invalidSessionUrl("/login");
     }
 
     @Bean

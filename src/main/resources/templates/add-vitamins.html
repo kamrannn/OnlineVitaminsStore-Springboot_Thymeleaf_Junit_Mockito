@@ -15,7 +15,6 @@
     <a th:href="@{/}">Home</a>
     <a class="active" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/product/new}">Add New Product</a>
     <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/allOrders}">Customer Orders</a>
-    <a th:href="@{#}" style="float: right">Hi, <span sec:authentication="name"></span></a>
     <a th:href="@{/logout}" style="float: right">SignOut</a>
 </div>
 <div>
