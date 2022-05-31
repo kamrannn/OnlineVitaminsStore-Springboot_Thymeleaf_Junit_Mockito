@@ -1,11 +1,11 @@
 package com.app.onlinevitaminstore;
 
-import com.app.onlinevitaminstore.model.Order;
-import com.app.onlinevitaminstore.model.Product;
-import com.app.onlinevitaminstore.model.Role;
-import com.app.onlinevitaminstore.model.User;
-import com.app.onlinevitaminstore.repository.OrderRepository;
-import com.app.onlinevitaminstore.repository.UserRepository;
+import com.app.onlinevitaminstore.entity.Order;
+import com.app.onlinevitaminstore.entity.Product;
+import com.app.onlinevitaminstore.entity.Role;
+import com.app.onlinevitaminstore.entity.User;
+import com.app.onlinevitaminstore.dao.OrderRepository;
+import com.app.onlinevitaminstore.dao.UserRepository;
 import com.app.onlinevitaminstore.service.OrderService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,6 +1,6 @@
-package com.app.onlinevitaminstore.repository;
+package com.app.onlinevitaminstore.dao;
 
-import com.app.onlinevitaminstore.model.Order;
+import com.app.onlinevitaminstore.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

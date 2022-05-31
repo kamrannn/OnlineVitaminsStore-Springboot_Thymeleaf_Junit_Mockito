@@ -1,7 +1,7 @@
 package com.app.onlinevitaminstore;
 
-import com.app.onlinevitaminstore.model.Product;
-import com.app.onlinevitaminstore.repository.ProductRepository;
+import com.app.onlinevitaminstore.entity.Product;
+import com.app.onlinevitaminstore.dao.ProductRepository;
 import com.app.onlinevitaminstore.service.ProductService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

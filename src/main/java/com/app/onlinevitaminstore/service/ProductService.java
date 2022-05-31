@@ -1,7 +1,7 @@
 package com.app.onlinevitaminstore.service;
 
-import com.app.onlinevitaminstore.model.Product;
-import com.app.onlinevitaminstore.repository.ProductRepository;
+import com.app.onlinevitaminstore.entity.Product;
+import com.app.onlinevitaminstore.dao.ProductRepository;
 import com.app.onlinevitaminstore.utility.FileUploadUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

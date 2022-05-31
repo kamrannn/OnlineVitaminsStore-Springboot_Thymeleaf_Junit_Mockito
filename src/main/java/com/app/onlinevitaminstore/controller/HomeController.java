@@ -1,6 +1,6 @@
 package com.app.onlinevitaminstore.controller;
 
-import com.app.onlinevitaminstore.model.User;
+import com.app.onlinevitaminstore.entity.User;
 import com.app.onlinevitaminstore.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

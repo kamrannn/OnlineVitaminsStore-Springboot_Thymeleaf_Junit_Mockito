@@ -1,10 +1,10 @@
 package com.app.onlinevitaminstore.service;
 
-import com.app.onlinevitaminstore.model.Order;
-import com.app.onlinevitaminstore.model.Product;
-import com.app.onlinevitaminstore.model.User;
-import com.app.onlinevitaminstore.repository.OrderRepository;
-import com.app.onlinevitaminstore.repository.UserRepository;
+import com.app.onlinevitaminstore.entity.Order;
+import com.app.onlinevitaminstore.entity.Product;
+import com.app.onlinevitaminstore.entity.User;
+import com.app.onlinevitaminstore.dao.OrderRepository;
+import com.app.onlinevitaminstore.dao.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

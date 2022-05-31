@@ -1,9 +1,9 @@
 package com.app.onlinevitaminstore;
 
-import com.app.onlinevitaminstore.model.Role;
-import com.app.onlinevitaminstore.model.User;
-import com.app.onlinevitaminstore.repository.RoleRepository;
-import com.app.onlinevitaminstore.repository.UserRepository;
+import com.app.onlinevitaminstore.entity.Role;
+import com.app.onlinevitaminstore.entity.User;
+import com.app.onlinevitaminstore.dao.RoleRepository;
+import com.app.onlinevitaminstore.dao.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

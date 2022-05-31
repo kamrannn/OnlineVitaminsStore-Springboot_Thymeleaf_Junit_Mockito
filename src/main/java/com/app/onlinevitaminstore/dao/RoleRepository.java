@@ -1,6 +1,6 @@
-package com.app.onlinevitaminstore.repository;
+package com.app.onlinevitaminstore.dao;
 
-import com.app.onlinevitaminstore.model.Role;
+import com.app.onlinevitaminstore.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.app.onlinevitaminstore.controller;
 
-import com.app.onlinevitaminstore.model.Product;
+import com.app.onlinevitaminstore.entity.Product;
 import com.app.onlinevitaminstore.service.CartService;
 import com.app.onlinevitaminstore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

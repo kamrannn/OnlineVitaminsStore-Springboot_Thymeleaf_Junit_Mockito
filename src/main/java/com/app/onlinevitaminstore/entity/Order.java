@@ -1,4 +1,4 @@
-package com.app.onlinevitaminstore.model;
+package com.app.onlinevitaminstore.entity;
 
 import lombok.*;
 

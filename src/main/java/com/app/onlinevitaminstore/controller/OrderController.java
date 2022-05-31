@@ -1,7 +1,7 @@
 package com.app.onlinevitaminstore.controller;
 
-import com.app.onlinevitaminstore.model.Order;
-import com.app.onlinevitaminstore.model.Product;
+import com.app.onlinevitaminstore.entity.Order;
+import com.app.onlinevitaminstore.entity.Product;
 import com.app.onlinevitaminstore.service.CartService;
 import com.app.onlinevitaminstore.service.OrderService;
 import com.app.onlinevitaminstore.service.ProductService;
@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
